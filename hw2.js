@@ -27,9 +27,9 @@ let getBalance = function(username) {
       wallet += blockchain[i].amount;
     else if (blockchain[i].fromUser == username)
         wallet -= blockchain[i].amount;
-    }
-  return wallet;
   }
+  return wallet;
+}
 
 // Write a function that, when given a username (i.e. brian, ben, or jeff),
 // returns the number of KelloggCoin that user has in their KelloggCoin "wallet".
